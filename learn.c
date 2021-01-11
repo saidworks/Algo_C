@@ -34,8 +34,28 @@ int main(void){
 	printf("long double size: %lu bytes\n", sizeof(long double));
 	
 	// declare a constant
-	const int AGE = 32 ;
+	const int AGE = 42 ;
 	printf("my age is %d years \n", AGE);
-	#define  AGE 31
-	printf("my wife's age is %d years",AGE);	
+	#define  AGE 45
+	printf("my wife's age is %d years \n",AGE);	
+	
+	// operators 
+	int a = 2;
+	int b;
+	b = a++; /* b is 2, a is 3 */
+	b = ++a;/* b is 4, a is 4 */
+	b += 2; 
+	a++;
+	b--;
+	printf("a equal %d and b equal %d \n",a,b);
+	
+	/* C does not have a boolean type of variable * but it can be defined as follows:*/
+	#define BOOL char
+	#define FALSE 0
+	#define TRUE 1
+	int k = TRUE;
+	printf("%d",k);
+	
+
+	
 }
