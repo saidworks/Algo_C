@@ -54,8 +54,16 @@ int main(void){
 	#define FALSE 0
 	#define TRUE 1
 	int k = TRUE;
-	printf("%d",k);
+	printf("%d \n",k);
 	
+		//En classe
+	#define false 0 //Constante définition de false = 0 
+	#define true !false //Constante true = !false donc true = 1
+	typedef int bool; //macro de définition d'un nouveau type bool, sans résultat de retour à la mémoire est un entier
 
-	
+     bool isHappy = true;
+
+     printf("%d",isHappy);
+    return 0;
+
 }
