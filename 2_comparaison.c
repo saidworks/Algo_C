@@ -12,7 +12,7 @@ int main(void){
 	scanf("%d",&nbr1);
 	printf("entrer le deuxième numéro \n");
 	scanf("%d",&nbr2);
-	if(max(nbr1,nbr2)){
+	if(max(nbr1,nbr2)==true){
 		printf("True");
 	}
 	else{
