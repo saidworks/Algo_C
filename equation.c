@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-int solution(int a,int b,int c);
+int Delta(int a,int b,int c);
 
 int main(){
 	int a,b,c;
@@ -11,10 +11,10 @@ int main(){
 	scanf("%d",&b);
 	printf("veuillez entrer la valeur de c");
 	scanf("%d",&c);
-	delta = solution(a,b,c);
+	delta = Delta(a,b,c);
 //	printf("%d",delta);
 	if(delta < 0){
-		printf("Il n'y a pas de solution réelle pour cette équation");
+		printf("Il n'y a pas de solution rï¿½elle pour cette ï¿½quation");
 	}
 	else if (delta == 0){
 		x_1 = -b/(2*a);
@@ -23,13 +23,13 @@ int main(){
 	else {
 		x_1 = (-b -sqrt(delta))/(2*a);
 		x_2 = (-b + sqrt(delta))/(2*a);
-		printf("il y a deux solution pour l'équation : %d , %d)",x_1,x_2);
+		printf("il y a deux solution pour l'ï¿½quation : %d , %d)",x_1,x_2);
 	}
 	return 0;
 
 	
 }
 
-int solution(int a,int b, int c){
+int Delta(int a,int b, int c){
 	return pow(b,2) - 4*a*c;
 }
