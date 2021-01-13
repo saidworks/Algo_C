@@ -12,7 +12,7 @@ int main(void){
 	i++;
 	}
 	if (nombre == -1) {
-		moyenne = somme/(i-1); // denominator must be float to get result as float
+		moyenne = (somme+1)/(i-1); // denominator must be float to get result as float
 		printf(" i est %d \n",i); 
 		printf("la moyenne des nombres saisies est %f",moyenne);
 	}
