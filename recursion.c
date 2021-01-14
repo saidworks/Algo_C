@@ -22,7 +22,9 @@ int multiply(int a,int b){
 		return 0; 
 	}
 	else if (b % 2 != 0 ){ 
-		return multiply(a-1 , b) + a;
+		a=a;
+		b = b-1;
+		return multiply(a , b) + a;
 	}
 
 		
