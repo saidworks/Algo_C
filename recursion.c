@@ -20,10 +20,17 @@ int multiply(int a,int b){
 	if (b ==0){
 		return 0; 
 	}
+<<<<<<< HEAD
 	else if (b % 2 != 0 && b>0 ) { 
 		a = a;
 		b = b-1;
 		return multiply(a , b-1) + a;
+=======
+	else if (b % 2 != 0 ){ 
+		a=a;
+		b = b-1;
+		return multiply(a , b) + a;
+>>>>>>> ebb907a8897d120a1ecdc3ce4c0692112d2b9faa
 	}
 /*
 fun(36,7) = fun(36,6) + 36
