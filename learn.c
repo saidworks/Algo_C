@@ -11,7 +11,11 @@ int main(void){
   	printf("%d \n", j); /* 9 */
   	char i = 127;
   	i = i + 10;
-  	printf("%u \n",i); // C does not protect over going off limits on variable type ( 1 byte for char 2 byte/ for int and  short, and 4 bytes for long)
+  	printf("%u \n \n \n",i); // C does not protect over going off limits on variable type ( 1 byte for char 2 byte/ for int and  short, and 4 bytes for long)
+  	int a =3;
+  	int b = 7;
+  	int c = ++a + ++b;
+  	printf("%d + %d = %d",a,b,c);
   	
 	/*    
 	for int:
@@ -39,16 +43,16 @@ int main(void){
 	#define  AGE 45
 	printf("my wife's age is %d years \n",AGE);	
 	
-	// operators 
-	int a = 2;
-	int b;
-	b = a++; /* b is 2, a is 3 */
-	b = ++a;/* b is 4, a is 4 */
-	b += 2; 
-	a++;
-	b--;
-	printf("a equal %d and b equal %d \n",a,b);
-	
+//	 operators 
+//	int k = 2;
+//	int j;
+//	b = k++; /* b is 2, a is 3 */
+//	b = ++a;/* b is 4, a is 4 */
+//	b += 2; 
+//	a++;
+//	b--;
+//	printf("a equal %d and b equal %d \n",a,b);
+//	
 	/* C does not have a boolean type of variable * but it can be defined as follows:*/
 	#define BOOL char
 	#define FALSE 0
